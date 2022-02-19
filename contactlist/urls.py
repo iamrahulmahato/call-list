@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 
+admin.site.site_header = "Call List"
+admin.site.site_title = "Call List Admin Portal"
+admin.site.index_title = "Welcome to Call List Portal"
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('home.urls'))
